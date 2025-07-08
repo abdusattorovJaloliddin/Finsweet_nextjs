@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Clone = () => {
+const page = () => {
   return (
-    <div>Clone</div>
+    <div></div>
   )
 }
 
-export default Clone
+export default page

@@ -78,7 +78,7 @@ const Header = () => {
           Contact Us
         </Link>
         <Link
-          href="/clone"
+          href=""
           className="text-black font-bold hover:text-yellow-600 hover:bg-yellow-100 rounded-2xl p-2 transition duration-300 ease-in-out"
         >
           Clone project

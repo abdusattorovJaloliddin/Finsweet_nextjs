@@ -17,7 +17,7 @@ const Homepage = () => {
         <div className="flex-1">
           <h1 className="text-4xl sm:text-5xl font-bold text-blue-900 leading-tight mb-4">
             Prosper with our <br />
-            <span className="text-blue-700">bespoke solutions</span>
+            <span className="text-blue-900">bespoke solutions</span>
           </h1>
           <p className="text-gray-600 mb-6 max-w-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
