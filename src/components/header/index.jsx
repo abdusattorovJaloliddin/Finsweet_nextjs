@@ -26,25 +26,21 @@ const Header = () => {
         aria-label="Toggle menu"
       >
         <div
-          className={`w-10 h-1 rounded-2xl bg-blue-900 transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "rotate-45 translate-y-3" : "translate-y-0"
-          }`}
+          className={`w-10 h-1 rounded-2xl bg-blue-900 transition-all duration-300 ease-in-out ${isMenuOpen ? "rotate-45 translate-y-3" : "translate-y-0"
+            }`}
         ></div>
         <div
-          className={`w-10 h-1 rounded-2xl bg-blue-900 transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"
-          }`}
+          className={`w-10 h-1 rounded-2xl bg-blue-900 transition-all duration-300 ease-in-out ${isMenuOpen ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"
+            }`}
         ></div>
         <div
-          className={`w-10 h-1 rounded-2xl bg-blue-900 transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "-rotate-45 -translate-y-3" : "translate-y-0"
-          }`}
+          className={`w-10 h-1 rounded-2xl bg-blue-900 transition-all duration-300 ease-in-out ${isMenuOpen ? "-rotate-45 -translate-y-3" : "translate-y-0"
+            }`}
         ></div>
       </div>
       <div
-        className={`${
-          isMenuOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row items-center gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none`}
+        className={`${isMenuOpen ? "flex" : "hidden"
+          } md:flex flex-col md:flex-row items-center gap-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 shadow-md md:shadow-none`}
         onClick={() => setIsMenuOpen(false)}
       >
         <Link
@@ -79,7 +75,7 @@ const Header = () => {
         </Link>
         <Link
           href=""
-          className="text-black font-bold hover:text-yellow-600 hover:bg-yellow-100 rounded-2xl p-2 transition duration-300 ease-in-out"
+          className="text-black font-bold bg-amber-200 hover:text-yellow-600 hover:bg-yellow-100 rounded-2xl p-2 transition duration-300 ease-in-out"
         >
           Clone project
         </Link>
