@@ -1,15 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Image1 from "../../public/Image (1).png";
-import Image2 from "../../public/Image (2).png";
-import Image3 from "../../public/Image (3).png";
-import Image4 from "../../public/Image (4).png";
-import Image5 from "../../public/Image (5).png";
-import Image6 from "../../public/Image (6).png";
-import Image7 from "../../public/Image (7).png";
-import Image8 from "../../public/Image (8).png";
-
 const Homepage = () => {
   return (
     <section>
@@ -24,7 +15,6 @@ const Homepage = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
               varius enim in eros elementum tristique.
             </p>
-
             <div className="flex gap-4 sm:gap-6 mb-8">
               <button className="bg-orange-400 text-white px-4 sm:px-6 py-2 rounded-full font-semibold hover:bg-orange-500 transition">
                 See Our Services
@@ -33,11 +23,10 @@ const Homepage = () => {
                 See All Services
               </button>
             </div>
-
             <div>
               <p className="text-gray-500 mb-2">Worked with 100+ Companies</p>
               <Image
-                src="/Header%20Logos.png"
+                src="/Header_Logos.png"
                 alt="Company logos"
                 width={400}
                 height={50}
@@ -45,10 +34,9 @@ const Homepage = () => {
               />
             </div>
           </div>
-
           <div className="flex-1 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto">
             <Image
-              src="/Image.png"
+              src="/Image_first.png"
               alt="Smiling Businessman"
               width={500}
               height={500}
@@ -58,7 +46,6 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-
       <div className="container mx-auto mt-16 px-6 my-2">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -70,49 +57,78 @@ const Homepage = () => {
             commodo suscipit tellus et pellentesque.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[ // Cardlarni loop bilan yozish uchun
-            {
-              img: Image1,
-              title: 'Business strategy',
-            },
-            {
-              img: Image2,
-              title: 'Digitalization',
-            },
-            {
-              img: Image3,
-              title: 'Risk assessment',
-            },
-          ].map(({ img, title }, idx) => (
-            <div key={idx} className="bg-white rounded-2xl shadow-md p-6">
-              <Image
-                src={img}
-                alt={title}
-                layout="responsive"
-                width={400}
-                height={250}
-                className="rounded-xl mb-5 object-cover"
-              />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                {title}
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                sit amet eros blandit, hendrerit elit et,
-              </p>
-              <a
-                href="#"
-                className="text-orange-500 font-medium hover:underline flex items-center gap-1"
-              >
-                Learn More <span>→</span>
-              </a>
-            </div>
-          ))}
+          <div className="bg-white rounded-2xl shadow-md p-6">
+            <Image
+              src="/team1.png"
+              alt="Business strategy"
+              layout="responsive"
+              width={400}
+              height={250}
+              className="rounded-xl mb-5 object-cover"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Business strategy
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet eros blandit, hendrerit elit et,
+            </p>
+            <a
+              href="#"
+              className="text-orange-500 font-medium hover:underline flex items-center gap-1"
+            >
+              Learn More <span>→</span>
+            </a>
+          </div>
+          <div className="bg-white rounded-2xl shadow-md p-6">
+            <Image
+              src="/team2.png"
+              alt="Digitalization"
+              layout="responsive"
+              width={400}
+              height={250}
+              className="rounded-xl mb-5 object-cover"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Digitalization
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet eros blandit, hendrerit elit et,
+            </p>
+            <a
+              href="#"
+              className="text-orange-500 font-medium hover:underline flex items-center gap-1"
+            >
+              Learn More <span>→</span>
+            </a>
+          </div>
+          <div className="bg-white rounded-2xl shadow-md p-6">
+            <Image
+              src="/team3.png"
+              alt="Risk assessment"
+              layout="responsive"
+              width={400}
+              height={250}
+              className="rounded-xl mb-5 object-cover"
+            />
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              Risk assessment
+            </h3>
+            <p className="text-gray-600 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sit amet eros blandit, hendrerit elit et,
+            </p>
+            <a
+              href="#"
+              className="text-orange-500 font-medium hover:underline flex items-center gap-1"
+            >
+              Learn More <span>→</span>
+            </a>
+          </div>
         </div>
       </div>
-
       <div className="bg-[#e6f1fd]">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-6 mb-8">
@@ -127,9 +143,7 @@ const Homepage = () => {
               commodo suscipit tellus et pellentesque.
             </p>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* Invoicing Card */}
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition text-center">
               <div className="mb-4">
                 <span className="text-4xl" role="img" aria-label="Invoicing">💰</span>
@@ -140,8 +154,6 @@ const Homepage = () => {
                 Curabitur sit amet eros blandit, hendrerit elit et.
               </p>
             </div>
-
-            {/* Support Card */}
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition text-center">
               <div className="mb-4">
                 <span className="text-4xl" role="img" aria-label="Support">⭐</span>
@@ -152,8 +164,6 @@ const Homepage = () => {
                 Curabitur sit amet eros blandit, hendrerit elit et.
               </p>
             </div>
-
-            {/* Surveying Card */}
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-md transition text-center">
               <div className="mb-4">
                 <span className="text-4xl" role="img" aria-label="Surveying">❤️</span>
@@ -167,7 +177,6 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -202,16 +211,16 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-
         <div className="md:w-1/2 mt-8 md:mt-0 relative">
           <Image
-            src={Image4}
-            alt="Team member"
+            width={400}
+            height={250}
+            src="/Favorites1.png"
+            alt="Favorites Team member"
             className="relative z-10 rounded-lg w-full max-w-md mx-auto"
           />
         </div>
       </div>
-
       <div className="bg-[#e6f1fd]">
         <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2">
@@ -226,7 +235,6 @@ const Homepage = () => {
                 Risk Assessment
               </button>
             </div>
-
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Helping clients with research and strategy for their business
             </h2>
@@ -237,7 +245,6 @@ const Homepage = () => {
               purus. Vivamus commodo suscipit tellus et pellentesque. Curabitur
               sit amet eros blandit esq.
             </p>
-
             <a
               href="#"
               className="text-orange-500 font-semibold text-sm flex items-center hover:underline"
@@ -245,26 +252,27 @@ const Homepage = () => {
               See all services <span className="ml-2">→</span>
             </a>
           </div>
-
           <div className="md:w-1/2 mt-8 md:mt-0 relative">
             <Image
-              src={Image5}
+              src="/Favorites2.png"
+              width={400}
+              height={250}
               alt="Team collaboration"
               className="relative z-10 rounded-lg w-full max-w-md mx-auto"
             />
           </div>
         </div>
       </div>
-
       <div className="container mx-auto px-6 py-8 flex flex-col md:flex-row items-stretch justify-between">
         <div className="md:w-1/2 flex">
           <Image
-            src={Image6}
+            src="/Favorites3.png"
+            width={400}
+            height={250}
             alt="Person with coffee"
             className="w-full object-cover"
           />
         </div>
-
         <div className="md:w-1/2 h-auto bg-orange-500 text-white p-8 flex flex-col items-center justify-center">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
             Energy of a start-up combined with 30 years of experience.
@@ -274,7 +282,6 @@ const Homepage = () => {
           </button>
         </div>
       </div>
-
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -287,7 +294,9 @@ const Homepage = () => {
           </p>
           <div className="flex items-center">
             <Image
-              src={Image8}
+              src="/Favorites41.png"
+              width={400}
+              height={250}
               alt="Chikelu Neo"
               className="w-12 h-12 rounded-full mr-4"
             />
@@ -297,16 +306,16 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-
         <div className="md:w-1/2 mt-8 md:mt-0 relative">
           <Image
-            src={Image7}
+            src="/Favorites4.png"
+            width={400}
+            height={250}
             alt="Testimonial video"
             className="w-full rounded-lg object-cover"
           />
         </div>
       </div>
-
       <div className="bg-[#e6f1fd]">
         <div className="container mx-auto px-6 py-12">
           <div>
@@ -317,7 +326,7 @@ const Homepage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl shadow-md p-6">
               <Image
-                src={Image1}
+                src="/team1.png"
                 alt="Business Strategy"
                 width={400}
                 height={250}
@@ -337,10 +346,9 @@ const Homepage = () => {
                 Learn More <span>→</span>
               </a>
             </div>
-
             <div className="bg-white rounded-2xl shadow-md p-6">
               <Image
-                src={Image2}
+                src="/team2.png"
                 alt="Digitalization"
                 width={400}
                 height={250}
@@ -360,13 +368,12 @@ const Homepage = () => {
                 Learn More <span>→</span>
               </a>
             </div>
-
             <div className="bg-white rounded-2xl shadow-md p-6">
               <Image
-                src={Image3}
-                alt="Risk Assessment"
+                src="/team3.png"
                 width={400}
                 height={250}
+                alt="Risk Assessment"
                 className="rounded-xl mb-5 w-full h-56 object-cover"
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -388,6 +395,5 @@ const Homepage = () => {
       </div>
     </section>
   );
-};
-
+}
 export default Homepage;

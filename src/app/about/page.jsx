@@ -1,16 +1,5 @@
 import React from "react";
-import Person from "../../../public/Image (9).png";
 import Image from "next/image";
-import About from "../../../public/About.png";
-import Team1 from "../../../public/Image 1.png";
-import Team2 from "../../../public/Image 2.png";
-import Team3 from "../../../public/Image 3.png";
-import Team4 from "../../../public/Image 4.png";
-import Imagecopy from "../../../public/Image copy.png"
-import SlideTeam1 from "../../../public/Image (1).png"
-import SlideTeam2 from "../../../public/Image (2).png"
-import SlideTeam3 from "../../../public/Image (3).png"
-
 const AboutPage = () => {
   return (
     <div className="container mx-auto px-4 py-12">
@@ -30,7 +19,7 @@ const AboutPage = () => {
         </div>
         <div className="mt-8 md:mt-0">
           <Image
-            src={Person}
+            src="/AboutPerson.png"
             alt="Person"
             width={400}
             height={400}
@@ -39,7 +28,6 @@ const AboutPage = () => {
           />
         </div>
       </div>
-
       <div className="mt-16">
         <h2 className="text-3xl md:text-4xl font-bold text-[#063255] text-center mb-12">
           The energy of a start-up combined with 30 years of experience
@@ -84,7 +72,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
       <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-12 bg-white p-6 md:p-12 rounded-lg shadow-md">
         <div className="md:max-w-md">
           <h2 className="text-3xl md:text-4xl font-bold text-[#063255] mb-4">
@@ -99,7 +86,7 @@ const AboutPage = () => {
         </div>
         <div className="relative mt-8 md:mt-0">
           <Image
-            src={About}
+            src="/About.png"
             alt="Team working together"
             width={400}
             height={400}
@@ -109,7 +96,6 @@ const AboutPage = () => {
           <div className="absolute bottom-4 right-4 w-16 h-16 bg-orange-500 opacity-50 rounded-lg"></div>
         </div>
       </div>
-
       <div className="mt-16">
         <h2 className="text-3xl md:text-4xl font-bold text-[#063255] text-center mb-12">
           Teamwork is the only way we work
@@ -122,7 +108,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center p-6 bg-white rounded-lg shadow-md">
             <Image
-              src={Team1}
+              src="/Slide1.png"
               alt="Team member 1"
               width={300}
               height={400}
@@ -134,7 +120,7 @@ const AboutPage = () => {
           </div>
           <div className="text-center p-6 bg-white rounded-lg shadow-md">
             <Image
-              src={Team2}
+              src="/Slide2.png"
               alt="Team member 2"
               width={300}
               height={400}
@@ -146,7 +132,7 @@ const AboutPage = () => {
           </div>
           <div className="text-center p-6 bg-white rounded-lg shadow-md">
             <Image
-              src={Team3}
+              src="/Slide3.png"
               alt="Team member 3"
               width={300}
               height={400}
@@ -158,7 +144,7 @@ const AboutPage = () => {
           </div>
           <div className="text-center p-6 bg-white rounded-lg shadow-md">
             <Image
-              src={Team4}
+              src="/Slide4.png"
               alt="Team member 4"
               width={300}
               height={400}
@@ -170,7 +156,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-
       <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-12 bg-white p-6 md:p-12 rounded-lg shadow-md">
         <div className="flex flex-col gap-4 md:max-w-md">
           <h2 className="text-2xl md:text-3xl text-[#063255] leading-relaxed">
@@ -183,7 +168,7 @@ const AboutPage = () => {
           </p>
           <div className="flex items-center gap-4">
             <Image
-              src={Person}
+              src="/Favorites41.png"
               alt="Chikelu Neo"
               width={50}
               height={50}
@@ -197,7 +182,7 @@ const AboutPage = () => {
         </div>
         <div className="mt-8 md:mt-0 relative w-full max-w-xl">
           <Image
-            src={Imagecopy}
+            src="/Favorites4.png"
             alt="Testimonial Video"
             width={600}
             height={600}
@@ -218,13 +203,12 @@ const AboutPage = () => {
           </button>
         </div>
       </div>
-
       <div>
         <h2 className="text-3xl font-bold text-[#063255] mb-8 pl-6">Latest Blog & News</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src={SlideTeam1}
+              src="/team1.png"
               alt="Why you have to digitalize in 2021"
               width={400}
               height={300}
@@ -246,7 +230,7 @@ const AboutPage = () => {
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src={SlideTeam2}
+              src="/team2.png"
               alt="Our internal process and longterm vision"
               width={400}
               height={300}
@@ -267,7 +251,7 @@ const AboutPage = () => {
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src={SlideTeam3}
+              src="/team2.png"
               alt="Helping the next generation of leaders"
               width={400}
               height={300}
@@ -291,5 +275,4 @@ const AboutPage = () => {
     </div>
   );
 };
-
 export default AboutPage;

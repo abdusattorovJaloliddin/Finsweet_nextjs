@@ -6,7 +6,6 @@ import { FaYoutubeSquare } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { CiTwitter } from "react-icons/ci";
 import Link from "next/link";
-
 const Footer = () => {
   return (
     <section className="bg-[#063255]">
@@ -28,7 +27,6 @@ const Footer = () => {
               <CiTwitter className="text-white" />
             </span>
           </div>
-
           <div className="flex flex-col">
             <p className="text-[#e6f1fd] font-semibold mb-4">Company</p>
             <Link
@@ -56,13 +54,11 @@ const Footer = () => {
               Careers
             </Link>
           </div>
-
           <div className="flex flex-col">
             <p className="text-[#e6f1fd] font-semibold mb-4">Connect</p>
             <p className="text-[#e6f1fd] py-1">hi@finsweet.com</p>
             <p className="text-[#e6f1fd] py-1">+(123) 456-7890</p>
           </div>
-
           <div className="flex flex-col items-center sm:items-start">
             <p className="text-[#e6f1fd] font-semibold mb-4">Join Newsletter</p>
             <input
@@ -79,5 +75,4 @@ const Footer = () => {
     </section>
   );
 };
-
 export default Footer;

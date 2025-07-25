@@ -1,11 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import Person from "../../../public/Image (10).png";
-import HeaderImage from "../../../public/Header Image.png";
-import SlideTeam1 from "../../../public/Image (1).png";
-import SlideTeam2 from "../../../public/Image (2).png";
-import SlideTeam3 from "../../../public/Image (3).png";
-
 const Blog = () => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +9,7 @@ const Blog = () => {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6">
               <Image
-                src={Person}
+                src="/littleperson.png"
                 alt="Andrew Jonson"
                 width={40}
                 height={40}
@@ -25,7 +20,6 @@ const Blog = () => {
                 <p className="text-gray-500 text-xs">Posted on 27th January 2021</p>
               </div>
             </div>
-
             <h2 className="text-3xl md:text-4xl font-bold text-[#063255] mb-4">
               Our internal process and longterm vision
             </h2>
@@ -34,17 +28,17 @@ const Blog = () => {
               the readable content of a page when looking at its layout. The
               Maker is a decentralized. We aim to attain the
             </p>
-            <a
+            <Link
               href="#"
               className="text-orange-500 font-semibold text-sm hover:underline"
             >
               Read More <span className="ml-2">→</span>
-            </a>
-          </div>
+            </Link>
 
+          </div>
           <div className="flex-1">
             <Image
-              src={HeaderImage}
+              src="/Company.png"
               alt="Office Setting"
               width={600}
               height={400}
@@ -53,7 +47,6 @@ const Blog = () => {
           </div>
         </div>
       </div>
-
       <div className="py-16">
         <h3 className="text-2xl md:text-3xl font-bold text-[#063255] mb-8">
           All Posts
@@ -61,7 +54,7 @@ const Blog = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <Image
-              src={SlideTeam1}
+              src="/team1.png"
               alt="Why you have to digitalize in 2021"
               width={400}
               height={300}
@@ -80,10 +73,9 @@ const Blog = () => {
               </a>
             </div>
           </div>
-
           <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <Image
-              src={SlideTeam2}
+              src="/team2.png"
               alt="Our internal process and longterm vision"
               width={400}
               height={300}
@@ -102,10 +94,9 @@ const Blog = () => {
               </a>
             </div>
           </div>
-
           <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <Image
-              src={SlideTeam3}
+              src="/team3.png"
               alt="Helping the next generation of leaders"
               width={400}
               height={300}
@@ -126,12 +117,11 @@ const Blog = () => {
           </div>
         </div>
       </div>
-
       <div className="py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8">
           <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <Image
-              src={SlideTeam3}
+              src="/team3.png"
               alt="Helping the next generation of leaders"
               width={400}
               height={300}
@@ -150,10 +140,9 @@ const Blog = () => {
               </a>
             </div>
           </div>
-
           <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <Image
-              src={SlideTeam1}
+              src="/team1.png"
               alt="Why you have to digitalize in 2021"
               width={400}
               height={300}
@@ -172,10 +161,9 @@ const Blog = () => {
               </a>
             </div>
           </div>
-
           <div className="bg-blue-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
             <Image
-              src={SlideTeam2}
+              src="/team2.png"
               alt="Our internal process and longterm vision"
               width={400}
               height={300}
@@ -199,5 +187,4 @@ const Blog = () => {
     </div>
   );
 };
-
 export default Blog;

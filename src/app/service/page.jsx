@@ -1,15 +1,5 @@
 import React from "react";
-import Person from "../../../public/Header Image copy.png";
 import Image from "next/image";
-import Feature from "../../../public/Feature 1 Image.png";
-import Feature2 from "../../../public/Feature 2 Image.png";
-import Feature3 from "../../../public/Feature 3 Image.png";
-import Feature4 from "../../../public/Featue 4 Image.png";
-import Feature5 from "../../../public/Feature 5 Image.png";
-import SlideTeam1 from "../../../public/Image (1).png"
-import SlideTeam2 from "../../../public/Image (2).png"
-import SlideTeam3 from "../../../public/Image (3).png"
-
 const Service = () => {
   return (
     <div className="container mx-auto px-4 py-12">
@@ -26,10 +16,9 @@ const Service = () => {
             Work With Us
           </button>
         </div>
-
         <div className="mt-8 md:mt-0">
           <Image
-            src={Person}
+            src="/Developer.png"
             alt="Person"
             width={400}
             height={400}
@@ -38,13 +27,12 @@ const Service = () => {
           />
         </div>
       </div>
-
       <div className="mt-16">
         <div className="space-y-8">
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4">
             <div className="w-full sm:w-1/3">
               <Image
-                src={Feature}
+                src="/Muzican.png"
                 alt="Business Strategy"
                 width={200}
                 height={200}
@@ -67,11 +55,10 @@ const Service = () => {
               </ul>
             </div>
           </div>
-
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 flex flex-col sm:flex-row-reverse items-center gap-4">
             <div className="w-full sm:w-1/3">
               <Image
-                src={Feature2}
+                src="/Teacher.png"
                 alt="Digitalization"
                 width={200}
                 height={200}
@@ -89,11 +76,10 @@ const Service = () => {
               </p>
             </div>
           </div>
-
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4">
             <div className="w-full sm:w-1/3">
               <Image
-                src={Feature3}
+                src="/Sportsmen.png"
                 alt="Business Strategy"
                 width={200}
                 height={200}
@@ -116,11 +102,10 @@ const Service = () => {
               </ul>
             </div>
           </div>
-
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 flex flex-col sm:flex-row-reverse items-center gap-4">
             <div className="w-full sm:w-1/3">
               <Image
-                src={Feature4}
+                src="/Visitor.png"
                 alt="Digitalization"
                 width={200}
                 height={200}
@@ -129,7 +114,7 @@ const Service = () => {
             </div>
             <div className="w-full sm:w-2/3">
               <h3 className="text-xl sm:text-2xl font-bold text-[#063255] mb-2">
-                Digitalization
+                Artificial intelligence
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -138,11 +123,10 @@ const Service = () => {
               </p>
             </div>
           </div>
-
           <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4">
             <div className="w-full sm:w-1/3">
               <Image
-                src={Feature5}
+                src="/Joma.png"
                 alt="Business Strategy"
                 width={200}
                 height={200}
@@ -151,7 +135,7 @@ const Service = () => {
             </div>
             <div className="w-full sm:w-2/3">
               <h3 className="text-xl sm:text-2xl font-bold text-[#063255] mb-2">
-                Business strategy
+                Smart Contracts
               </h3>
               <p className="text-gray-600 text-sm sm:text-base mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -167,13 +151,12 @@ const Service = () => {
           </div>
         </div>
       </div>
-
       <div>
         <h2 className="text-3xl font-bold text-[#063255] mb-8 pl-6">Latest Blog & News</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src={SlideTeam1}
+              src="/team1.png"
               alt="Why you have to digitalize in 2021"
               width={400}
               height={300}
@@ -195,7 +178,7 @@ const Service = () => {
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src={SlideTeam2}
+              src="/team2.png"
               alt="Our internal process and longterm vision"
               width={400}
               height={300}
@@ -216,7 +199,7 @@ const Service = () => {
           </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src={SlideTeam3}
+              src="/team3.png"
               alt="Helping the next generation of leaders"
               width={400}
               height={300}
@@ -240,5 +223,4 @@ const Service = () => {
     </div>
   );
 };
-
 export default Service;

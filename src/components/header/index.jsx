@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Logotip from "../../../public/Logo.svg";
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -83,5 +82,4 @@ const Header = () => {
     </header>
   );
 };
-
 export default Header;

@@ -1,5 +1,4 @@
 import React from "react";
-
 const Contact = () => {
   return (
     <div className="container mx-auto px-4 py-12 bg-blue-50 flex flex-col md:flex-row items-start justify-between gap-12 border-4 border-blue-50">
@@ -35,7 +34,6 @@ const Contact = () => {
           </button>
         </form>
       </div>
-
       <div className="w-full md:w-1/2 space-y-6">
         <div>
           <div className="flex gap-16">
@@ -75,5 +73,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;
